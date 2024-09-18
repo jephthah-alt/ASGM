@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/page.css">
+</head>
+<body>
+    <div id="dashboard">
+        <h1>Welcome to the Tropics!</h1>
+        <p>You've successfully logged in or signed up. This is your dashboard. Enjoy the tropical vibes while we set things up for you.</p>
+        <p>Explore the features below to get started:</p>
+        
+        <button id="logout-button">Logout</button>
+    </div>
+
+    <script>
+        document.getElementById('logout-button').addEventListener('click', function() {
+            localStorage.clear(); // Clear any stored data
+            window.location.href = 'index.html'; // Redirect back to login page
+        });
+    </script>
+</body>
+</html>
